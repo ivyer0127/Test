@@ -11,7 +11,7 @@ public class AboutActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+		// aaaaaaaaaaaaaaaaaaaaa
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_about);
