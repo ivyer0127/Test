@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:screenOrientation="landscape" >
+
+    <com.zonesion.environmenttemhumi.PercentRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       
+    <ImageView
+        android:id="@+id/titleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-11dp"
+        android:contentDescription="@string/ib_content_desc"
+        android:src="@drawable/hjwsd" />
+    
+    <TextView
+        android:id="@+id/versionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/titleView"
+        android:layout_alignLeft="@+id/connect"
+        android:layout_marginBottom="21dp"
+        android:text="@string/versionma"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />    
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/versionNum"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp"
+        android:text="@string/connect_state"
+        android:textColor="#ffffff"
+        android:textSize="12sp" /> 
+        
+    <ImageButton
+        android:id="@+id/ib_data_collection"
+  		android:layout_width="wrap_content"
+        app:layout_heightPercent="10%h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/data_collection"
+        android:contentDescription="@string/ib_content_desc"
+        android:onClick="dataCollection" />
+
+    <ImageButton
+        android:id="@+id/ib_about_us"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="10%h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/about_us"
+        android:contentDescription="@string/ib_content_desc"
+        android:onClick="aboutUs" />
+
+    <TextView
+        android:id="@+id/fsmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center"
+        android:text="@string/fsmin"
+        android:textColor="#011933"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/fsmin"
+        android:ems="10"
+        android:hint="@string/edit_fsmin" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        app:layout_marginRightPercent="50%w"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/editText1"
+        android:background="#5068fc"
+        android:onClick="button1"
+        android:text="@string/fscmd"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fsmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_below="@+id/fsmin"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center"
+        android:text="@string/fsmax"
+        android:textColor="#011933"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignBottom="@+id/button1"
+        android:ems="10"
+        android:hint="@string/edit_fsmax" />
+    
+    
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bjimage2"
+        app:layout_heightPercent="20%h"
+        app:layout_widthPercent="20%h"
+        app:layout_marginLeftPercent="50%w"
+        android:layout_below="@+id/titleView"
+        android:contentDescription="@string/ib_content_desc"
+        android:src="@drawable/alarm_off" />
+    
+    <TextView
+        android:id="@+id/fxmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_toRightOf="@+id/bjimage2"
+        android:gravity="center"
+        android:text="@string/fxmin"
+        android:textColor="#011933"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/fxmin"
+        android:ems="10"
+        android:hint="@string/edit_fxmin" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/editText3"
+        android:background="#5068fc"
+        android:onClick="button2"
+        android:text="@string/fxcmd"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fxmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_below="@+id/fxmin"
+        android:layout_toRightOf="@+id/bjimage2"
+        android:gravity="center"
+        android:text="@string/fxmax"
+        android:textColor="#011933"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignBottom="@+id/button2"
+        android:ems="10"
+        android:hint="@string/edit_fxmax" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleView"
+        app:layout_heightPercent="20%h"
+        app:layout_widthPercent="20%h"
+        android:contentDescription="@string/ib_content_desc"
+        android:src="@drawable/alarm_off" />
+
+    <com.zonesion.environmenttemhumi.DialChart04View_temper
+        android:id="@+id/circle_view"
+        android:layout_below="@+id/button1"
+        android:layout_toLeftOf="@+id/circle_view2"
+        app:layout_heightPercent="55%h"
+        app:layout_widthPercent="50%w" />
+
+    <com.zonesion.environmenttemhumi.DialChart04View_hum
+        android:id="@+id/circle_view2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/circle_view"
+        app:layout_heightPercent="55%h"
+        app:layout_widthPercent="50%w" />
+    
+ </com.zonesion.environmenttemhumi.PercentRelativeLayout>
+</RelativeLayout>

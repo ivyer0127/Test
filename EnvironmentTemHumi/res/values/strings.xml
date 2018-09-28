@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">环境温湿度信息采集</string>
+    <string name="ib_content_desc">图片按钮的功能</string>
+    <string name="connect_state">数据链接掉线！</string>
+    <string name="tv_fs_value">温度值：--</string>
+    <string name="fsmax">温度上限值：</string>
+    <string name="fxmin">湿度下限值：</string>
+    <string name="fsmin">温度下限值：</string>
+    <string name="fxmax">湿度上限值：</string>
+    <string name="tv_fx_value">湿度值：--</string>
+    <string name="fxcmd">设置报警</string>
+    <string name="fscmd">设置报警</string>
+    <string name="edit_fsmin">请输入温度下限值</string>
+    <string name="edit_fxmax">请输入湿度上限值</string>
+    <string name="edit_fsmax">请输入温度上限值</string>
+    <string name="edit_fxmin">请输入湿度下限值</string>
+    <string name="versionma">version: v1.0.161216</string>
+</resources>
